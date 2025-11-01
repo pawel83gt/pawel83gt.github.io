@@ -3,22 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SPA Redirect</title>
-    <script>
-        const segmentCount = 0; // Измените если ваш проект в подпапке
-        const l = window.location;
-        l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
-            l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-            (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-            l.hash
-        );
+    <title>My React App</title>
+    <script type="text/javascript">
+        window.location.href = '/';
     </script>
 </head>
 
 <body>
-    <p>Redirecting...</p>
+    <p>Loading application...</p>
 </body>
 
 </html>
